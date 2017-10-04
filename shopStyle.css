@@ -1,0 +1,54 @@
+/* Nav Bar */
+.navbar {
+	overflow: hidden;
+	background-color: #ffa5fd;
+	position: fixed; /* Sets the nav bar at a fixed position */
+	top: 0; /* Nav bar is positioned to start at the top of the page */
+	width: 100%; /* The nav bar spans across the full page width */
+}
+
+.navbar a {
+	font-family: "Avenir";
+	float: left;
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 28px 25px;
+	text-decoration: none;
+	font-size: 17px;
+}
+
+.navbar a:hover{
+	background-color: #f975f3;
+}
+
+.navbar a.active{
+	background-color: #f975f3;
+}
+
+.navbar h1 a{
+	font-family: "Avenir";
+	float: left;
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 25px 25px;
+	text-decoration: none;
+	font-size: 20px;
+}
+
+.main h1 {
+	font-family: "Avenir";
+	color: white;
+}
+
+body {
+	margin: 0;
+	background-color: #ffccfd;
+}
+
+h1{
+	font-family: "Avenir";
+	color: white;
+	margin-left: 40px;
+}
