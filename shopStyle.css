@@ -21,12 +21,12 @@ body, html{
 
 /* Nav Bar Links */
 .navbar a {
-	font-family: "Avenir";
+	font-family: "Avenir", "Raleway", "Josefin Sans", sans-serif;
 	float: left;
 	display: block;
 	color: white;
 	text-align: center;
-	padding: 29px 20px;
+	padding: 28px 20px;
 	text-decoration: none;
 	font-size: 17px;
 }
@@ -41,13 +41,13 @@ body, html{
 }
 
 a.siteName {
-	font-family: "Avenir";
+	font-family: "Avenir", "Raleway", "Josefin Sans", sans-serif;
 	font-weight: 700;
 	float: left;
 	display: block;
 	color: white;
 	text-align: center;
-	padding: 27px 25px;
+	padding: 26px 25px;
 	text-decoration: none;
 	margin-left: 85px;
 	font-size: 20px;
@@ -61,7 +61,7 @@ a.siteName {
 
 .cartIcon{
 	display: block;
-  height: 24px;
+	height: 23px;
 }
 
 /* Hero Image */
@@ -71,15 +71,15 @@ a.siteName {
 
 /* Introduction Text */
 .main h1 {
-	font-family: "Avenir";
+	font-family: "Avenir", "Raleway", "Josefin Sans", sans-serif;
 	color: white;
 	text-align: center;
 	margin-top: 60px;
-	margin-bottom: 0px;
+	margin-bottom: 6px;
 }
 
 .main h2{
-	font-family: "Avenir";
+	font-family: "Avenir", "Raleway", "Josefin Sans", sans-serif;
 	font-weight: 500;
 	font-size: 17px;
 	color: white;
@@ -88,13 +88,13 @@ a.siteName {
 }
 
 .main p{
-	font-family: "Avenir";
+	font-family: "Avenir", "Raleway", "Josefin Sans", sans-serif;
 	font-weight: 400;
 	font-size: 16px;
 	color: white;
 	text-align: left;
 	margin-top: 30px;
-	margin-bottom: 70px;
+	margin-bottom: 50px;
 	margin-left: 120px;
 	margin-right: 120px;
 }
@@ -107,7 +107,7 @@ body {
 /* SHOP PAGE */
 
 .shopGallery h1 {
-  font-family: "Avenir";
+  font-family: "Avenir", "Raleway", "Josefin Sans", sans-serif;
   font-weight: 500;
   font-size: 38px;
   color: white;
@@ -130,10 +130,11 @@ hr {
 .shopGallery{
   max-width: 84%;
   margin: auto;
+  margin-bottom: 10px;
 }
 
 .shopGallery p{
-  font-family: "Avenir";
+  font-family: "Avenir", "Raleway", "Josefin Sans", sans-serif;
   font-weight: 400;
   font-size: 14px;
   color: white;
@@ -143,7 +144,6 @@ hr {
   margin-left: 200px;
   margin-right: 200px;
 }
-
 
 .bunImage{
     width: 100%;
@@ -158,7 +158,7 @@ hr {
 
 .bunName{
   text-decoration: none;
-  font-family: "Avenir";
+  font-family: "Avenir", "Raleway", "Josefin Sans", sans-serif;
   font-weight: 600;
   font-size: 14px;
   /* padding-top: 7px; */
@@ -166,7 +166,7 @@ hr {
 }
 
 .price{
-  font-family: "Avenir";
+  font-family: "Avenir", "Raleway", "Josefin Sans", sans-serif;
   font-weight: 500;
   color: #ff8ef6;
   float: right;
@@ -202,6 +202,76 @@ hr {
   clear: both;
 }
 
+
+/* Product Detail Layout */
+
+.productImage{
+  float: left;
+  max-width: 400px;
+  max-height: 400px;
+  margin-left: 8%;
+  margin-top: 110px;
+  margin-right: 75px;
+  background-color: white;
+}
+
+.detailsImage{
+  width: 80%;
+  margin: 40px;
+}
+
+.productInfo h1 {
+  font-family: "Avenir", "Raleway", "Josefin Sans", sans-serif;
+  font-weight: 500;
+  font-size: 38px;
+  color: white;
+  text-align: left;
+  margin-top: 100px;
+  margin-bottom: 10px;
+}
+
+.productInfo p {
+  font-family: "Avenir", "Raleway", "Josefin Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: white;
+  text-align: left;
+  margin-top: 8px;
+  margin-right: 8%;
+}
+
+#backButton{
+  background-color: #e970f4;
+  border: none;
+  color: white;
+  padding: 10px;
+  font-family: "Avenir", "Raleway", "Josefin Sans", sans-serif;
+  font-size: 13px;
+  cursor: pointer; /* Add a mouse pointer on hover */
+}
+
+#addItem{
+  background-color: #e970f4;
+  border: none;
+  color: white;
+  padding: 10px;
+  margin-left: 10px;
+  font-family: "Avenir", "Raleway", "Josefin Sans", sans-serif;
+  font-size: 13px;
+  cursor: pointer; /* Add a mouse pointer on hover */
+}
+
+.confirmationMessage{
+  font-family: "Avenir", "Raleway", "Josefin Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: white;
+  float: right;
+  margin-right: 115px;
+  text-align: left;
+  margin-bottom: 0;
+}
+
 /* Back to Top Button */
 #jumpToTop {
     display: none; /* Hidden by default */
@@ -211,8 +281,8 @@ hr {
     z-index: 99; /* Make sure it does not overlap */
     border: none; /* Remove borders */
     outline: none; /* Remove outline */
-    background-color: #e970f4; /* Set a background color */
-    font-family: "Avenir";
+    background-color: #dc4ed1; /* Set a background color */
+    font-family: "Avenir", "Raleway", "Josefin Sans", sans-serif;
     color: white; /* Text color */
     cursor: pointer; /* Add a mouse pointer on hover */
     padding: 15px; /* Some padding */
@@ -220,17 +290,25 @@ hr {
 }
 
 /* Footer */
-footer{
-  background-color: #f975f3;
-}
-
 footer p.footerText{
-  font-family: "Avenir";
+  font-family: "Avenir", "Raleway", "Josefin Sans", sans-serif;
   font-weight: 400;
   font-size: 12px;
   color: white;
   text-align: center;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 25px;
+  padding-bottom: 40px;
+  margin-bottom: 0px;
+}
+
+footer p.detailsFooter{
+  font-family: "Avenir", "Raleway", "Josefin Sans", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  color: white;
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 40px;
+  margin-top: 240px;
   margin-bottom: 0px;
 }
