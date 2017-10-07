@@ -1,54 +1,236 @@
-/* Nav Bar */
-.navbar {
-	overflow: hidden;
-	background-color: #ffa5fd;
-	position: fixed; /* Sets the nav bar at a fixed position */
-	top: 0; /* Nav bar is positioned to start at the top of the page */
-	width: 100%; /* The nav bar spans across the full page width */
+*{
+  box-sizing: border-box;
 }
 
+body, html{
+  max-width: 1366px;
+}
+
+#bar{
+	width: 50%;
+	color: white;
+	background-color:transparent;
+}
+
+/* Nav Bar */
+.navbar {
+  overflow: hidden;
+	background-color: #ffa5fd;
+	top: 0; 
+}
+
+/* Nav Bar Links */
 .navbar a {
 	font-family: "Avenir";
 	float: left;
 	display: block;
 	color: white;
 	text-align: center;
-	padding: 28px 25px;
+	padding: 29px 20px;
 	text-decoration: none;
 	font-size: 17px;
 }
 
+/* Nav Bar Link Animations*/
 .navbar a:hover{
-	background-color: #f975f3;
+  background-color: #f975f3;
 }
 
 .navbar a.active{
-	background-color: #f975f3;
+	background-color: black;
 }
 
-.navbar h1 a{
+a.siteName {
 	font-family: "Avenir";
+	font-weight: 700;
 	float: left;
 	display: block;
 	color: white;
 	text-align: center;
-	padding: 25px 25px;
+	padding: 27px 25px;
 	text-decoration: none;
+	margin-left: 85px;
 	font-size: 20px;
 }
 
+/* Shopping Cart Icon */
+.navRight{
+	float: right;
+	margin-right: 7%;
+}
+
+.cartIcon{
+	display: block;
+  height: 24px;
+}
+
+/* Hero Image */
+.heroImage{
+  width: 100%;
+}
+
+/* Introduction Text */
 .main h1 {
 	font-family: "Avenir";
 	color: white;
+	text-align: center;
+	margin-top: 60px;
+	margin-bottom: 0px;
+}
+
+.main h2{
+	font-family: "Avenir";
+	font-weight: 500;
+	font-size: 17px;
+	color: white;
+	text-align: center;
+	margin-top: 2px;
+}
+
+.main p{
+	font-family: "Avenir";
+	font-weight: 400;
+	font-size: 16px;
+	color: white;
+	text-align: left;
+	margin-top: 30px;
+	margin-bottom: 70px;
+	margin-left: 120px;
+	margin-right: 120px;
 }
 
 body {
 	margin: 0;
-	background-color: #ffccfd;
+	background-color: #ff8ef6;
 }
 
-h1{
-	font-family: "Avenir";
-	color: white;
-	margin-left: 40px;
+/* SHOP PAGE */
+
+.shopGallery h1 {
+  font-family: "Avenir";
+  font-weight: 500;
+  font-size: 38px;
+  color: white;
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 10px;
+}
+
+hr {
+    display: block;
+    width: 77%;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: double;
+    border-color: white;
+}
+
+.shopGallery{
+  max-width: 84%;
+  margin: auto;
+}
+
+.shopGallery p{
+  font-family: "Avenir";
+  font-weight: 400;
+  font-size: 14px;
+  color: white;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+
+.bunImage{
+    width: 100%;
+    max-height: 200px;
+    margin-bottom: 15px;
+}
+
+.bunDetails{
+    width: 100%;
+    max-height: 600px;
+}
+
+.bunName{
+  text-decoration: none;
+  font-family: "Avenir";
+  font-weight: 600;
+  font-size: 14px;
+  /* padding-top: 7px; */
+  display: inline;
+}
+
+.price{
+  font-family: "Avenir";
+  font-weight: 500;
+  color: #ff8ef6;
+  float: right;
+  padding-top: 3px;
+  font-size: 14px;
+}
+
+.row{
+  margin-left: 11%;
+  margin-bottom: 25px;
+}
+
+.row a{
+  text-decoration: none;
+}
+.row a:hover{
+  color: #f975f3;
+}
+
+.column {
+  padding: 25px;
+  margin-right: 30px;
+  float: left;
+  width: 27%;
+  background-color: white;
+  max-height: 378px;
+  /* max-width: 200px; */
+}
+
+.row:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Back to Top Button */
+#jumpToTop {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #e970f4; /* Set a background color */
+    font-family: "Avenir";
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+}
+
+/* Footer */
+footer{
+  background-color: #f975f3;
+}
+
+footer p.footerText{
+  font-family: "Avenir";
+  font-weight: 400;
+  font-size: 12px;
+  color: white;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-bottom: 0px;
 }
