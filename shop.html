@@ -1,35 +1,41 @@
 <!DOCTYPE html>
-<!--defining the character set-->
+<!--Defining the character set-->
 <meta charset="UTF-8"> 
-<!--viewport meta tags make the site work on many devices and resolutions-->
+<!--Viewport meta tags make the site work on many devices and resolutions-->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <html>
   <head>
-    <!--linking to our css stylesheet-->
+    <!--Linking to the stylesheet-->
     <link rel="stylesheet" type="text/css" href="shopStyle.css">
+    <!--Linking to the typefaces-->
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Raleway" rel="stylesheet">
+    <!--Adding in a favicon-->
     <link rel="icon" href="img/bunFavicon.png" type="image/png" sizes="16x16">
+    <!--Defining the website title-->
     <title>Bun Bun Bake Shop</title>
   </head>
 
   <body>
+    <!--Navigation setup-->
     <div class="navbar">
       <a class="siteName" href="index.html">Bun Bun Bake Shop</a>
       <a href="index.html">About</a>
       <a href="shop.html">Shop</a>
-      <a href="contact.html">Contact</a>
+      <a href="index.html">Contact</a>
+      <!--Adding the shopping cart-->
       <div class="navRight">
         <a href="#cart"><img class="cartIcon" src="img/cartIcon.png" alt="Shopping Cart"></a>
       </div>
     </div>
 
+    <!--Gallery Section-->
     <div class="shopGallery">
       <h1>Browse Cinnamon Rolls</h1>
       <p>Check out what we currently have in stock. We serve up a number of different artisan flavors. For the month of October, we've brought back our famous Pumpkin Spice Cinnamon Rolls. We ship to anywhere in the United States!</p>
       <hr>
 
-    <!-- Portfolio Gallery Grid -->
+    <!--Item Tiles-->
     <div class="row">
       <a href="index.html">
         <div class="column">
@@ -82,15 +88,13 @@
       </a>
     </div>
 
-
-    <div class="row">
-      <a href="index.html">
-        <div class="column">
-            <img class="bunImage" src="img/pumpkinSpice.jpg" alt="Pumpkin Spice Roll">
-            <span class="bunName">Pumpkin Spice</span>
-            <span class="price">$3.99</span>
-        </div>
-      </a>
+      <div class="row">
+        <a href="pumpkinSpice.html">
+          <div class="column">
+              <img class="bunImage" src="img/pumpkinSpice.jpg" alt="Pumpkin Spice Roll">
+              <span class="bunName">Pumpkin Spice</span>
+              <span class="price">$3.99</span>
+          </div>
 
       <a href="index.html">
         <div class="column">
@@ -126,7 +130,7 @@
         </div>
       </a>
 
-      <a href="index.html">
+      <a href="birthdayCake.html">
         <div class="column">
             <img class="bunImage" src="img/birthday.jpg" alt="Birthday Cake Roll">
             <span class="bunName">Birthday Cake</span>
@@ -161,10 +165,11 @@
       </a>
     </div>
 
+  <!--Button that brings the user back to the top after scrolling-->
   <button onclick="topFunction()" id="jumpToTop" title="Go to top">Back to Top</button>
 
   <script>
-  // When the user scrolls down 20px from the top of the document, show the button
+  // If the user goes down 20px from the top of the page, button should be displayed
   window.onscroll = function() {scrollFunction()};
 
   function scrollFunction() {
@@ -175,7 +180,7 @@
       }
   }
 
-  // When the user clicks on the button, scroll to the top of the document
+  // Scroll back to the top of the page
   function topFunction() {
       document.body.scrollTop = 0;
       document.documentElement.scrollTop = 0;
@@ -183,6 +188,7 @@
   </script>
   </body>
 
+  <!--Footer-->
   <footer>
     <p class="footerText">Copyright © Bun Bakery 2017</p>
   </footer>

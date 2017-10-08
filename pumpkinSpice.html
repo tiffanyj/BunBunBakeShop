@@ -29,18 +29,34 @@
       </div>
     </div>
 
-    <!--Main content-->
-    <div class="main">
-      <img class="heroImage" src="img/bannerImage.jpg" alt="Photo of Bun Bun Bake Shop">
-      <h1>Welcome to Bun Bun Bake Shop!</h1>
-      <!--Description of Bun Bun Bake Shop-->
-      <h2>—  Serving baked goods to Pittsburgh since 2003 —</h2>
-      <p>Our bakery has been happily serving up sweets to the people of Pittsburgh for over a decade. We are a small bakery that specializes in cinnamon rolls. Our rolls come in a wide range of artisan flavors from Pumpkin Spice to Maple Apple Bacon. If you're looking for a classic cinnamon roll, we're famous for that too. While our shop is located in Squirrel Hill, Pittsburgh, we ship fresh rolls to anywhere in the USA. The online menu reflects what we sell in-store. Keep an eye out for our seasonal offerings. They are made in limited batches!</p>
+
+    <!-- Product Information -->
+    <div class="productImage">
+      <img class="detailsImage" src="img/pumpkinSpice.jpg" alt="Pumpkin Spice Roll">
     </div>
+
+    <div class="productInfo"> 
+      <h1>Pumpkin Spice Roll</h1>
+      <p>Enjoy this seasonal flavor that we specially make just for the month of October and November. The dough is made with pumpkin puree. We add two teaspoons of pumpkin pie spice to the flavor to give it a unique taste. Come in for one of these and grab a warm apple cider to go with it. Hurry in! We only offer 15 of these a day.</p>
+    </div>
+
+    <!-- Button Options: Back to gallery / Add item to cart -->
+    <a href="shop.html"><button id="backButton" type="button">Back to Gallery</button></a>
+    <button onclick="displayMessage()" id="addItem" type="button">Add Item to Cart</button>
+
+    <p id="itemAdded"></p>
+
+    <!-- Display a message to indicate that the item has been added -->
+    <script>
+    function displayMessage() {
+      document.getElementById("itemAdded").innerHTML = "This item has been added to your cart!";
+    }
+    </script>
+
   </body>
 
   <!--Footer-->
   <footer>
-    <p class="footerText">Copyright © Bun Bakery 2017</p>
+    <p class="detailsFooter">Copyright © Bun Bakery 2017</p>
   </footer>
 </html>

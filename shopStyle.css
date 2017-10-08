@@ -2,17 +2,18 @@
   box-sizing: border-box;
 }
 
+/* Making sure the dimensions fit 1366x768 */
 body, html{
   max-width: 1366px;
 }
 
+/* Nav Bar */
 #bar{
 	width: 50%;
 	color: white;
 	background-color:transparent;
 }
 
-/* Nav Bar */
 .navbar {
   overflow: hidden;
 	background-color: #ffa5fd;
@@ -31,7 +32,7 @@ body, html{
 	font-size: 17px;
 }
 
-/* Nav Bar Link Animations*/
+/* Nav Bar Link Animations */
 .navbar a:hover{
   background-color: #f975f3;
 }
@@ -40,6 +41,7 @@ body, html{
 	background-color: black;
 }
 
+/* Site Logo */
 a.siteName {
 	font-family: "Avenir", "Raleway", "Josefin Sans", sans-serif;
 	font-weight: 700;
@@ -105,7 +107,6 @@ body {
 }
 
 /* SHOP PAGE */
-
 .shopGallery h1 {
   font-family: "Avenir", "Raleway", "Josefin Sans", sans-serif;
   font-weight: 500;
@@ -116,6 +117,7 @@ body {
   margin-bottom: 10px;
 }
 
+/* Break line */
 hr {
     display: block;
     width: 77%;
@@ -145,6 +147,7 @@ hr {
   margin-right: 200px;
 }
 
+/* Tile Styling */
 .bunImage{
     width: 100%;
     max-height: 200px;
@@ -174,6 +177,7 @@ hr {
   font-size: 14px;
 }
 
+/* Grid */
 .row{
   margin-left: 11%;
   margin-bottom: 25px;
@@ -204,7 +208,6 @@ hr {
 
 
 /* Product Detail Layout */
-
 .productImage{
   float: left;
   max-width: 400px;
@@ -220,6 +223,7 @@ hr {
   margin: 40px;
 }
 
+/* Product Description */
 .productInfo h1 {
   font-family: "Avenir", "Raleway", "Josefin Sans", sans-serif;
   font-weight: 500;
@@ -240,6 +244,7 @@ hr {
   margin-right: 8%;
 }
 
+/* Button Styling */
 #backButton{
   background-color: #e970f4;
   border: none;
@@ -261,7 +266,7 @@ hr {
   cursor: pointer; /* Add a mouse pointer on hover */
 }
 
-.confirmationMessage{
+#itemAdded {
   font-family: "Avenir", "Raleway", "Josefin Sans", sans-serif;
   font-weight: 400;
   font-size: 16px;
